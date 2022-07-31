@@ -531,3 +531,17 @@ textarea{
         font-size: 15px;
     }
 }
+.gradiente{
+    background: linear-gradient(red, yellow, blue);
+    border: 3px solid black;
+    height: 300px;
+    transition: all 3s;
+}
+.gradiente:hover{
+    height: 400px;
+    background: radial-gradient(red, yellow, blue);
+    font-size: 60px;
+}
+.gradiente p{
+    color: black;
+}
