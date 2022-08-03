@@ -7,46 +7,13 @@ body{
     font-family: sans-serif;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: midnightblue;
-    height: 70px;
-    padding: 15px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    
-}
-.logo img{
-    height: 50px;
-    padding-right: 15px
-}
-.logo h2{
-    color: black;
-    border-radius: 12px;
-    border: 3px solid black;
-    padding: 5px 5px;
-    background-color: white;
-}
-nav a.nav-a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding-left: 12px;
-}
-nav a.nav-a:hover{
-    color: black;
-}
+
 
 #home{
     display: flex;
-    height: 700px;
+    height: 900px;
     background-image: url(pictures/fondo\ 5.jpg);
     background-repeat: no-repeat;
-    font-family: sans-serif;
     justify-content: space-evenly;
     flex-direction: column;
 }
@@ -121,6 +88,7 @@ footer{
 }
 .box-footer h2{
     color: white;
+    font-size: 28px;
 }
 .socials{
     display: flex;
@@ -137,14 +105,9 @@ footer{
     text-decoration: none;
     color: white;
 }
-.box-footer a:hover{
-    border-bottom: 2px solid black;
-    transition: 0.3s;
-}
 .map h2,p{
     margin-bottom: 10px;
     padding: 5px 7px;
-
 }
 
 
@@ -431,7 +394,6 @@ textarea{
         justify-content: space-around;
         flex-direction: column;
         box-sizing: border-box;
-        width: 320px;
     }
     .box-about1{
         display: flex;
@@ -531,6 +493,7 @@ textarea{
         font-size: 15px;
     }
 }
+
 .container-fluid a{
     font-size: 1.4rem;
 }
