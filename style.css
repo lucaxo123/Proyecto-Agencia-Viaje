@@ -494,3 +494,13 @@ textarea{
     }
 }
 
+.container-fluid a{
+    font-size: 1.4rem;
+}
+.container-fluid a:hover{
+    color: black;
+}
+
+.offcanvas-header h5{
+    font-size: 1.7rem;
+}
