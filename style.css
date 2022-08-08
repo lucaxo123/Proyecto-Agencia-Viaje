@@ -40,6 +40,9 @@ body{
     background-color: rgba(31, 122, 158, 0.5);
     padding: 5px 7px 5px 7px;
 }
+.btn-m:hover{
+    color: black;
+}
 .btn-m{
     font-size: 18px;
     color: white;
@@ -61,7 +64,7 @@ body{
 }
 
 footer{
-    background-color: midnightblue;
+    background-color: whitesmoke;
     height: 170px;
     display: flex;
     flex-direction: column;
@@ -71,7 +74,7 @@ footer{
 .box-footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 10px;
 }
 .boxfooter img{
@@ -86,75 +89,85 @@ footer{
     height: auto;
     width: 700px;
 }
+.boxfooter2 h2{
+    margin-bottom: 9px;
+}
+.boxfooter2 p{
+    margin: 0;
+}
 .box-footer h2{
-    color: white;
+    color: black;
     font-size: 28px;
+    border-bottom: 2px solid steelblue;
 }
 .socials{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
-.boxfooter3 h2{
-    margin-bottom: 5px;
-}
-.socials a{
-    margin-bottom: 7px;
+.socials i{
+    font-size: 25px;
 }
 .box-footer a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
-.map h2,p{
-    margin-bottom: 10px;
-    padding: 5px 7px;
+.map h2{
+    margin: 0;
+}
+.map p{
+    margin-top: 9px;
 }
 
-
+footer p{
+    color: black;
+    font-size: 16px;
+}
 
 #about{
     display: flex;
+    flex-direction: column;
     background-image: url(pictures/fondo\ 8.png);
     height: 700px;
     align-items: center;
-    justify-content: space-between;
-}
-.box-about1, .box-about2{
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    color: black;
 }
-.box-about1 a, 
-.box-about2 a{
-    font-size: 20px;
-}
-.box-about1 h4{
-    width: 700px;
-    font-size: 25px;
-    margin-top: 8px;
-    margin-bottom: 15px;
+.box-about1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .box-about1 h2{
-    font-size: 40px;
-    border-bottom: 3px solid whitesmoke;
+    font-size: 35px;
+    margin-bottom: 9px;
+    border-bottom: 4px solid white;
+}
+.box-about1 h4{
+    margin-bottom: 25px;
+    width: 800px;
+}
+.box-about1 a{
+    width: fit-content;
+}
+.box-about2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .box-about2 h2{
-    font-size: 40px;
-    margin-right: 50px;
+    font-size: 35px;
     margin-bottom: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
+    border-bottom: 4px solid white
 }
-
-.box-about1,.box-about2 a{
-    width: 150px;
+.box-about2 a{
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
 }
-
-.box-about1{
-    margin-left: 70px;
-    padding-left: 10px
-}
-
 .navpack{
     display: flex;
     justify-content: center;
@@ -162,22 +175,15 @@ footer{
     background-color: midnightblue;
     flex-direction: column;
 }
- .navpack h1{
-    color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: steelblue;
-    padding: 5px 7px 5px 7px;
- }
+
  .navpack h3{
-    font-size: 21px;
+    font-size: 24px;
     color: white;
     margin-bottom: 4px;
     margin-top: 4px;
  }
 
  #packages {
-    height: 990px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -187,6 +193,17 @@ footer{
     justify-items: center;
     background-color: steelblue;
  }
+ .spanpackages{
+    margin-top: 10px;
+ }
+ .spanpackages span{
+    color: black;
+    font-size: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.801);
+    padding: 5px 10px 5px 10px;
+ }
  .packages img{
     height: 300px;
     width: 500px;
@@ -194,8 +211,23 @@ footer{
     border: 4px solid black;
     border-radius: 5px;
  }
+ .price{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .price span{
+    text-decoration: line-through;
+    font-weight: normal;
+ }
+ .packages-card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
  
  .content h3{
+    color: black;
+    text-decoration: underline;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -212,18 +244,6 @@ footer{
     font-weight: bold;
  }
 
- .price{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    color: whi;
- }
- .price span{
-    text-decoration: line-through;
-    font-size: 20px;
-    font-weight: bold;
- }
 
  #services{
     display: flex;
@@ -232,16 +252,20 @@ footer{
     height: 900px;
     box-sizing: border-box;
  }
- #services h2{
+ .h2services{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
+    margin-top: 9px;
+ }
+ #services span{
     color: white;
-    background-color: rgba(31, 122, 158, 0.3);
-    font-size: 30px;
-    padding: 4px 8px 4px 8px;
+    font-size: 38px;
+    border-radius: 10px;
+    border: 3px solid rgb(50, 88, 119);
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px 5px 10px;
  }
  #services h3, p{
     color: white;
@@ -251,9 +275,38 @@ footer{
 #services h3{
     font-size: 25px; 
     font-weight: bold;
+    margin-right: 9px
 }
 #services p{
     font-size: 20px
+}
+.preguntas{
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: steelblue;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.preguntas h1{
+    margin-bottom: 0;
+}
+.accordion-item button{
+    font-size: 22px;
+}
+.spanContact{
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-section span{
+    color: white;
+    font-size: 28px;
+    padding: 3px 12px 3px 12px;
+    margin-right: 6px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 .box-container{
     display: flex;
@@ -269,9 +322,11 @@ footer{
 .form-section{
     background-color: midnightblue;
     display: flex;
+    border-top: 4px solid black;
+    width: auto;
 }
 .form{
-    width: 450px;
+    width: 420px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
@@ -335,30 +390,36 @@ textarea{
         flex-direction: column;
         justify-content: center;
         align-items: center ;
-        height: 25rem;
+        height: auto;
         box-sizing: border-box;
-        font-size: 15px;
     }
     .box-footer{
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        align-items: center;
     }
     .boxfooter2{
         display: flex;
         flex-direction: column;
         width: auto;
         box-sizing: border-box;
+        margin-top: 9px;
     }
     .boxfooter2 h2{
         font-size: 21px;
-        margin-top: 5px;
+    }
+    .boxfooter3{
+        margin-top: 9px;
+        margin-bottom: 9px;
     }
     .boxfooter3 h2{
         font-size: 21px;
     }
     .map h2{
         font-size: 21px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0;
     }
     .boxfooter2 p{
         font-size: 14px;
@@ -372,17 +433,10 @@ textarea{
         padding: 0;
         margin-top: 15px;
     }
-    .map h2{
-        text-align: center;
-        margin-bottom: 0;
-        padding: 0;
-    }
     .map p{
-        font-size: 18px;   
-        padding-bottom: 10px;
+        font-size: 18px;
         margin: 0;
-        margin-bottom: 7px;
-        margin-left: 5px;
+        margin-top: 9px;   
     }
 
     #about{
@@ -410,6 +464,7 @@ textarea{
     .box-about1 h2{
         font-size: 30px;
         color: white;
+        border-bottom: 3px solid white;
     }
     .box-about1 h4{
         font-size: 20px;
@@ -419,12 +474,11 @@ textarea{
         color: white;
     }
     .box-about2 h2{
-        margin: 0;
-        padding: 0;
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
         margin-bottom: 10px;
         color: white;
+        width: 300px;
     }
     .box-about2{
         display:flex ;
@@ -433,7 +487,7 @@ textarea{
     }
 
     #services{
-        height: 64rem;
+        height: auto;
         background-size: cover;
         background-image: no-repeat;
         background-image: fixed;
@@ -448,9 +502,17 @@ textarea{
 
     .box-container{
         box-sizing: border-box;
+        margin-bottom: 13px;
     }
-    #services h2{
-        border: 2px solid rgb(128, 124, 119);
+    .h2services{
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
+    #services span{
+        font-size: 18px;
+        margin: 0;
+        margin-right: 2px;
+
     }
     #services h3{
         font-size: 22px;
@@ -462,7 +524,9 @@ textarea{
     #services p{
         font-size: 16px;
         text-align: justify;
-        margin-left: 2px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 0;
     }
     #packages{
         height: 120rem;
@@ -475,11 +539,16 @@ textarea{
         justify-items: center;
         box-sizing: border-box;
     }
-    .navpack{
-        text-align: center;
+    
+    .navpack span{
+        font-size: 18px;
+        margin-right: 0;
     }
-    .navpack h1{
-        font-size: 25px
+    .spanpackages{
+        margin-top: 9px;
+    }
+    .packages-card{
+        margin-bottom: 0;
     }
     .navpack h3{
         font-size: 17px;
@@ -489,20 +558,23 @@ textarea{
         margin: 0;
         margin-top: 6px;
     }
-    .packages a{
-        margin: 0;
-        margin-bottom: 8px;
-    }
     .packages h3{
         font-size: 20px;
-        color: white;
+        color: black;
     }
     .form{
         border-radius: 0;
         margin: 0;
+        width: auto;
     }
     input, textarea{
         font-size: 15px;
+    }
+    .spanContact span{
+        font-size: 18px;
+        margin: 0;
+        margin-right: 3px;
+        padding: 0px 10px 0px 10px;
     }
 }
 
