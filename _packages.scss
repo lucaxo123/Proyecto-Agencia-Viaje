@@ -1,0 +1,61 @@
+#packages {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 18px;
+    row-gap: 18px;
+    align-items: center;
+    justify-items: center;
+    background-color: steelblue;
+ }
+ .spanpackages{
+    margin-top: 10px;
+    span{
+        color: black;
+        font-size: 35px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color:rgba(255, 255, 255, 0.801);
+        padding: 5px 10px 5px 10px;
+    }
+ }
+
+ .packages img{
+    height: 300px;
+    width: 500px;
+    margin: 0;
+    border: 4px solid black;
+    border-radius: 5px;
+ }
+ .price{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    span{
+        text-decoration: line-through;
+    font-weight: normal;
+    }
+ }
+ .packages-card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+ 
+ .content h3{
+    color: black;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+ }
+
+ .packages a{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+ }
