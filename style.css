@@ -1,594 +1,613 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
+#home {
+  display: flex;
+  height: 900px;
+  background-image: url(pictures/fondo\ 5.jpg);
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-
-
-#home{
-    display: flex;
-    height: 900px;
-    background-image: url(pictures/fondo\ 5.jpg);
-    background-repeat: no-repeat;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.home1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.home1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .home1 h1 {
-    font-size: 40px;
-    color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: rgba(31, 122, 158, 0.5);
-    padding: 5px 7px 5px 7px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba(31, 122, 158, 0.5);
+  padding: 5px 7px 5px 7px;
+  margin-bottom: 20px;
 }
-.home1 h3{
-    font-size: 25px;
-    color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: rgba(31, 122, 158, 0.5);
-    padding: 5px 7px 5px 7px;
+.home1 h3 {
+  font-size: 25px;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba(31, 122, 158, 0.5);
+  padding: 5px 7px 5px 7px;
 }
-.btn-m:hover{
-    color: black;
+
+.btn-m {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px 12px;
+  border: 2px solid black;
+  background-color: steelblue;
 }
-.btn-m{
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 12px 12px;
-    border: 2px solid black;
-    background-color: steelblue;
+.btn-m:hover {
+  color: black;
 }
-.home-a{
+
+.home-a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.home-a a {
+  margin-right: 30px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  background-image: url(pictures/fondo\ 8.png);
+  height: 700px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.box-about1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.box-about1 h2 {
+  font-size: 35px;
+  margin-bottom: 9px;
+  border-bottom: 4px solid white;
+}
+.box-about1 h4 {
+  margin-bottom: 25px;
+  width: 800px;
+}
+.box-about1 a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.box-about2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-about2 h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  border-bottom: 4px solid white;
+}
+.box-about2 a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://fondosmil.com/fondo/12405.jpg);
+  height: 900px;
+  box-sizing: border-box;
+}
+#services span {
+  color: white;
+  font-size: 38px;
+  border-radius: 10px;
+  border: 3px solid rgb(50, 88, 119);
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px 5px 10px;
+}
+#services h3 {
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 9px;
+}
+#services p {
+  font-size: 20px;
+  color: white;
+}
+
+.h2services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.box-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.box {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#packages {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  row-gap: 18px;
+  align-items: center;
+  justify-items: center;
+  background-color: steelblue;
+}
+
+.spanpackages {
+  margin-top: 10px;
+}
+.spanpackages span {
+  color: black;
+  font-size: 35px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.801);
+  padding: 5px 10px 5px 10px;
+}
+
+.packages img {
+  height: 300px;
+  width: 500px;
+  margin: 0;
+  border: 4px solid black;
+  border-radius: 5px;
+}
+
+.price {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.price span {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.packages-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  color: black;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.packages a {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.preguntas {
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: steelblue;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.preguntas h1 {
+  margin-bottom: 0;
+}
+
+.accordion-item button {
+  font-size: 22px;
+}
+
+.spanContact {
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section span {
+  color: white;
+  font-size: 28px;
+  padding: 3px 12px 3px 12px;
+  margin-right: 6px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.form-section {
+  background-color: midnightblue;
+  display: flex;
+  border-top: 4px solid black;
+  width: auto;
+}
+
+.form {
+  width: 420px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: steelblue;
+}
+.form h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 150px;
+  max-height: 250px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  header {
+    height: 10rem;
+  }
+  .logo img {
+    height: 50px;
+  }
+  #home {
+    background-image: url(https://i.pinimg.com/originals/5a/ee/ad/5aeead37dacf853742cec1ee0ff8347d.jpg);
+    background-size: cover;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+  }
+  #home h1 {
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 33px;
+  }
+  .home-a {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    justify-content: space-around;
+  }
+  .home-a a {
+    margin: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-
-}
-.home-a a{
-    margin-right: 30px;
-}
-
-footer{
-    background-color: whitesmoke;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-}
-.box-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 10px 10px;
-}
-.boxfooter img{
-    margin: 10px 10px;
-    margin-right: 30px;
-    height: 70px;
-}
-.boxfooter2{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     height: auto;
-    width: 700px;
-}
-.boxfooter2 h2{
-    margin-bottom: 9px;
-}
-.boxfooter2 p{
-    margin: 0;
-}
-.box-footer h2{
-    color: black;
-    font-size: 28px;
-    border-bottom: 2px solid steelblue;
-}
-.socials{
+    box-sizing: border-box;
+  }
+  .box-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-}
-.socials i{
-    font-size: 25px;
-}
-.box-footer a{
-    text-decoration: none;
-    color: black;
-}
-.map h2{
+  }
+  .box-footer img {
+    height: 50px;
     margin: 0;
-}
-.map p{
+    padding: 0;
+    margin-top: 15px;
+  }
+  .boxfooter2 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    box-sizing: border-box;
     margin-top: 9px;
-}
-
-footer p{
-    color: black;
-    font-size: 16px;
-}
-
-#about{
-    display: flex;
-    flex-direction: column;
-    background-image: url(pictures/fondo\ 8.png);
-    height: 700px;
-    align-items: center;
-    justify-content: space-evenly;
-    color: black;
-}
-.box-about1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-.box-about1 h2{
-    font-size: 35px;
+  }
+  .boxfooter2 h2 {
+    font-size: 21px;
+  }
+  .boxfooter2 p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  .boxfooter3 {
+    margin-top: 9px;
     margin-bottom: 9px;
-    border-bottom: 4px solid white;
-}
-.box-about1 h4{
-    margin-bottom: 25px;
-    width: 800px;
-}
-.box-about1 a{
-    width: fit-content;
-}
-.box-about2{
+  }
+  .boxfooter3 h2 {
+    font-size: 21px;
+  }
+  .map h2 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .map p {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 9px;
+  }
+  #about {
+    background-image: url(https://i.pinimg.com/originals/6d/52/09/6d52092890304cc6d76d6b43180d4d5d.jpg);
+    background-size: cover;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .box-about1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.box-about2 h2{
-    font-size: 35px;
-    margin-bottom: 15px;
-    border-bottom: 4px solid white
-}
-.box-about2 a{
-    width: fit-content;
+    box-sizing: border-box;
+    width: 320px;
+    margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
-}
-.navpack{
+    flex-wrap: nowrap;
+  }
+  .box-about1 h2 {
+    font-size: 30px;
+    color: white;
+    border-bottom: 3px solid white;
+  }
+  .box-about1 h4 {
+    font-size: 20px;
+    width: 300px;
+    text-align: justify;
+    box-sizing: border-box;
+    color: white;
+  }
+  .box-about2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: midnightblue;
-    flex-direction: column;
-}
-
- .navpack h3{
-    font-size: 24px;
+  }
+  .box-about2 h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
     color: white;
-    margin-bottom: 4px;
-    margin-top: 4px;
- }
-
- #packages {
+    width: 300px;
+  }
+  #services {
+    height: auto;
+    background-size: cover;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-image: url(https://wallpaperslinks.com/wp-content/uploads/2020/03/skyscraper-reflection-buildings-in-water-body-5k-da-1080x1920-1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  #services span {
+    font-size: 18px;
+    margin: 0;
+    margin-right: 2px;
+  }
+  #services h3 {
+    font-size: 22px;
+    justify-content: center;
+    margin: 0;
+    margin-left: 4px;
+  }
+  #services p {
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 0;
+    color: white;
+  }
+  .box-container {
+    box-sizing: border-box;
+    margin-bottom: 13px;
+  }
+  .h2services {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+  #packages {
+    height: 120rem;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    column-gap: 18px;
-    row-gap: 18px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     align-items: center;
     justify-items: center;
-    background-color: steelblue;
- }
- .spanpackages{
-    margin-top: 10px;
- }
- .spanpackages span{
-    color: black;
-    font-size: 35px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.801);
-    padding: 5px 10px 5px 10px;
- }
- .packages img{
-    height: 300px;
-    width: 500px;
-    margin: 0;
-    border: 4px solid black;
-    border-radius: 5px;
- }
- .price{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
- }
- .price span{
-    text-decoration: line-through;
-    font-weight: normal;
- }
- .packages-card{
-    margin-top: 15px;
-    margin-bottom: 15px;
- }
- 
- .content h3{
-    color: black;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 25px;
- }
-
- .packages a{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
- }
-
-
- #services{
-    display: flex;
-    flex-direction: column;
-    background-image: url(https://fondosmil.com/fondo/12405.jpg);
-    height: 900px;
     box-sizing: border-box;
- }
- .h2services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .navpack span {
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .spanpackages {
     margin-top: 9px;
- }
- #services span{
-    color: white;
-    font-size: 38px;
-    border-radius: 10px;
-    border: 3px solid rgb(50, 88, 119);
-    margin-right: 5px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px 5px 10px;
- }
- #services h3, p{
-    color: white;
-    margin-top: 10px;
-    margin-left: 10px; 
-}
-#services h3{
-    font-size: 25px; 
-    font-weight: bold;
-    margin-right: 9px
-}
-#services p{
-    font-size: 20px
-}
-.preguntas{
-    color: black;
-    display: flex;
-    justify-content: center;
-    background-color: steelblue;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
-}
-.preguntas h1{
+  }
+  .packages-card {
     margin-bottom: 0;
-}
-.accordion-item button{
-    font-size: 22px;
-}
-.spanContact{
-    margin-bottom: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form-section span{
-    color: white;
-    font-size: 28px;
-    padding: 3px 12px 3px 12px;
-    margin-right: 6px;
-    border: 3px solid black;
-    border-radius: 15px;
-}
-.box-container{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-}
-.box{
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.form-section{
-    background-color: midnightblue;
-    display: flex;
-    border-top: 4px solid black;
-    width: auto;
-}
-.form{
-    width: 420px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: steelblue;
-}
-.form h2{
-    color: white;
-    text-align: center;
+  }
+  .navpack h3 {
+    font-size: 17px;
+  }
+  .packages img {
+    width: 300px;
     margin: 0;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-input, textarea{
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-textarea{
-    min-height: 150px;
-    max-height: 250px;
-    max-width: 100%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 460px){
-    header{
-        height: 10rem;
-    }
-    .logo img{
-        height: 50px;
-    }
-    
-    #home{
-        background-image: url(https://i.pinimg.com/originals/5a/ee/ad/5aeead37dacf853742cec1ee0ff8347d.jpg);
-        background-size: cover;
-        background-image: no-repeat;
-        background-image: fixed;
-        background-image: center;
-    }
-    
-    .home1 h1{
-        margin-right: 8px ;
-        margin-left: 8px;
-        font-size: 33px;
-    }
-    .home-a{
-        display: flex;
-        justify-content: space-around;
-    }
-    .home-a a{
-        margin: 0; 
-    }
-    
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center ;
-        height: auto;
-        box-sizing: border-box;
-    }
-    .box-footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .boxfooter2{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        box-sizing: border-box;
-        margin-top: 9px;
-    }
-    .boxfooter2 h2{
-        font-size: 21px;
-    }
-    .boxfooter3{
-        margin-top: 9px;
-        margin-bottom: 9px;
-    }
-    .boxfooter3 h2{
-        font-size: 21px;
-    }
-    .map h2{
-        font-size: 21px;
-        text-align: center;
-        margin-bottom: 0;
-        padding: 0;
-    }
-    .boxfooter2 p{
-        font-size: 14px;
-        text-align: justify;
-        margin: 0;
-        margin-bottom: 6px;
-    }
-    .box-footer img{
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        margin-top: 15px;
-    }
-    .map p{
-        font-size: 18px;
-        margin: 0;
-        margin-top: 9px;   
-    }
-
-    #about{
-        background-image: url(https://i.pinimg.com/originals/6d/52/09/6d52092890304cc6d76d6b43180d4d5d.jpg);
-        background-size: cover;
-        background-image: no-repeat;
-        background-image: fixed;
-        background-image: center;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        box-sizing: border-box;
-    }
-    .box-about1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width: 320px;
-        margin: 10px 10px 10px 10px;
-        padding: 10px 10px 10px 10px;
-        flex-wrap: nowrap;
-    }
-    .box-about1 h2{
-        font-size: 30px;
-        color: white;
-        border-bottom: 3px solid white;
-    }
-    .box-about1 h4{
-        font-size: 20px;
-        width: 300px;
-        text-align: justify;
-        box-sizing: border-box;
-        color: white;
-    }
-    .box-about2 h2{
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 10px;
-        color: white;
-        width: 300px;
-    }
-    .box-about2{
-        display:flex ;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #services{
-        height: auto;
-        background-size: cover;
-        background-image: no-repeat;
-        background-image: fixed;
-        background-image: center;
-        background-image: url(https://wallpaperslinks.com/wp-content/uploads/2020/03/skyscraper-reflection-buildings-in-water-body-5k-da-1080x1920-1.jpg);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-    }
-
-    .box-container{
-        box-sizing: border-box;
-        margin-bottom: 13px;
-    }
-    .h2services{
-        margin-bottom: 9px;
-        margin-top: 9px;
-    }
-    #services span{
-        font-size: 18px;
-        margin: 0;
-        margin-right: 2px;
-
-    }
-    #services h3{
-        font-size: 22px;
-        justify-content: center;
-        margin: 0;
-        margin-left: 4px;
-    }
-
-    #services p{
-        font-size: 16px;
-        text-align: justify;
-        margin-left: 6px;
-        margin-right: 6px;
-        margin-top: 0;
-    }
-    #packages{
-        height: 120rem;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        row-gap: 10px;
-        column-gap: 10px;
-        align-items: center;
-        justify-items: center;
-        box-sizing: border-box;
-    }
-    
-    .navpack span{
-        font-size: 18px;
-        margin-right: 0;
-    }
-    .spanpackages{
-        margin-top: 9px;
-    }
-    .packages-card{
-        margin-bottom: 0;
-    }
-    .navpack h3{
-        font-size: 17px;
-    }
-    .packages img{
-        width: 300px;
-        margin: 0;
-        margin-top: 6px;
-    }
-    .packages h3{
-        font-size: 20px;
-        color: black;
-    }
-    .form{
-        border-radius: 0;
-        margin: 0;
-        width: auto;
-    }
-    input, textarea{
-        font-size: 15px;
-    }
-    .spanContact span{
-        font-size: 18px;
-        margin: 0;
-        margin-right: 3px;
-        padding: 0px 10px 0px 10px;
-    }
-}
-
-.container-fluid a{
-    font-size: 1.4rem;
-}
-.container-fluid a:hover{
+    margin-top: 6px;
+  }
+  .packages h3 {
+    font-size: 20px;
     color: black;
+  }
+  .form {
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+  }
+  input, textarea {
+    font-size: 15px;
+  }
+  .spanContact span {
+    font-size: 18px;
+    margin: 0;
+    margin-right: 3px;
+    padding: 0px 10px 0px 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.offcanvas-header h5{
-    font-size: 1.7rem;
+body {
+  font-family: sans-serif;
 }
 
-header{
-    height: 80px;
+footer {
+  background-color: whitesmoke;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
+footer p {
+  color: black;
+  font-size: 16px;
+}
+
+.box-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 10px;
+}
+.box-footer h2 {
+  color: black;
+  font-size: 28px;
+  border-bottom: 2px solid steelblue;
+}
+.box-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.boxfooter img {
+  margin: 10px 10px;
+  margin-right: 30px;
+  height: 70px;
+}
+
+.boxfooter2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 700px;
+}
+.boxfooter2 h2 {
+  margin-bottom: 9px;
+}
+.boxfooter2 p {
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.socials i {
+  font-size: 25px;
+}
+
+.map h2 {
+  margin: 0;
+}
+
+.map p {
+  margin-top: 9px;
+}
+
+.navpack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: midnightblue;
+  flex-direction: column;
+}
+.navpack h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.container-fluid a {
+  font-size: 1.4rem;
+}
+
+.container-fluid a:hover {
+  color: black;
+}
+
+.offcanvas-header h5 {
+  font-size: 1.7rem;
+}
+
+header {
+  height: 80px;
+}/*# sourceMappingURL=style.css.map */

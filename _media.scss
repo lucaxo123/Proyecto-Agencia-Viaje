@@ -1,0 +1,221 @@
+@media screen and (min-width: 320px) and (max-width: 460px){
+    header{
+        height: 10rem;
+    }
+    .logo img{
+        height: 50px;
+    }
+    
+    #home{
+        background-image: url(https://i.pinimg.com/originals/5a/ee/ad/5aeead37dacf853742cec1ee0ff8347d.jpg);
+        background-size: cover;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        h1{
+            margin-right: 8px ;
+        margin-left: 8px;
+        font-size: 33px;
+    }
+        }
+    
+    
+    .home-a{
+        display: flex;
+        justify-content: space-around;
+        a{
+            margin: 0; 
+        }
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .box-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 50px;
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+        }
+    }
+    .boxfooter2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        box-sizing: border-box;
+        margin-top: 9px;
+        h2{
+            font-size: 21px;
+        }
+        p{
+            font-size: 14px;
+        text-align: justify;
+        margin: 0;
+        margin-bottom: 6px;
+        }
+    }
+    .boxfooter3{
+        margin-top: 9px;
+        margin-bottom: 9px;
+        h2{
+            font-size: 21px;
+        }
+    }
+    .map h2{
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .map p{
+        font-size: 18px;
+        margin: 0;
+        margin-top: 9px;   
+    }
+
+    #about{
+        background-image: url(https://i.pinimg.com/originals/6d/52/09/6d52092890304cc6d76d6b43180d4d5d.jpg);
+        background-size: cover;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .box-about1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 320px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        flex-wrap: nowrap;
+        h2{
+            font-size: 30px;
+        color: white;
+        border-bottom: 3px solid white;
+        }
+        h4{
+            font-size: 20px;
+        width: 300px;
+        text-align: justify;
+        box-sizing: border-box;
+        color: white;
+        }
+    }
+    .box-about2{
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: white;
+        width: 300px;
+        }
+    }
+
+    #services{
+        height: auto;
+        background-size: cover;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        background-image: url(https://wallpaperslinks.com/wp-content/uploads/2020/03/skyscraper-reflection-buildings-in-water-body-5k-da-1080x1920-1.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        span{
+            font-size: 18px;
+        margin: 0;
+        margin-right: 2px;
+        }
+        h3{
+            font-size: 22px;
+        justify-content: center;
+        margin: 0;
+        margin-left: 4px;
+        }
+        p{
+        font-size: 16px;
+        text-align: justify;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 0;
+        color: white;
+        }
+    }
+
+    .box-container{
+        box-sizing: border-box;
+        margin-bottom: 13px;
+    }
+    .h2services{
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
+    #packages{
+        height: 120rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        box-sizing: border-box;
+    }
+    
+    .navpack span{
+        font-size: 18px;
+        margin-right: 0;
+    }
+    .spanpackages{
+        margin-top: 9px;
+    }
+    .packages-card{
+        margin-bottom: 0;
+    }
+    .navpack h3{
+        font-size: 17px;
+    }
+    .packages img{
+        width: 300px;
+        margin: 0;
+        margin-top: 6px;
+    }
+    .packages h3{
+        font-size: 20px;
+        color: black;
+    }
+    .form{
+        border-radius: 0;
+        margin: 0;
+        width: auto;
+    }
+    input, textarea{
+        font-size: 15px;
+    }
+    .spanContact span{
+        font-size: 18px;
+        margin: 0;
+        margin-right: 3px;
+        padding: 0px 10px 0px 10px;
+    }
+    }

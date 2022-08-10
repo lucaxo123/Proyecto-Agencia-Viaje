@@ -1,0 +1,44 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    background-image: url(pictures/fondo\ 8.png);
+    height: 700px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+.box-about1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        font-size: 35px;
+        margin-bottom: 9px;
+        border-bottom: 4px solid white;
+    }
+    h4{
+        margin-bottom: 25px;
+        width: 800px;
+    }
+    a{
+        width: fit-content;
+    }
+}
+
+.box-about2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 35px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid white;
+    }
+    a{
+        width: fit-content;
+        padding: 10px 10px 10px 10px;
+    }
+}
