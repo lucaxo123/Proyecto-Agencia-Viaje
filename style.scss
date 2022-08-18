@@ -5,6 +5,13 @@
 @import "contact";
 @import "media";
 
+@mixin boton{
+    color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba(31, 122, 158, 0.5);
+}
+
 *{
     margin: 0;
     padding: 0;
